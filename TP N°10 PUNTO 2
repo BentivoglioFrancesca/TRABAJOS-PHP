@@ -1,0 +1,12 @@
+<?php
+$coches = [];
+$coches[0] = 10;
+$coches[1] = 20;
+$coches[2] = 30;
+$coches[3] = 40;
+$coches[4] = 50;
+$coches[5] = 60;
+$coches[6] = 70;
+$coches[7] = 80;
+echo "El elemento con índice 5 es: " . $coches[5];
+?>

@@ -1,0 +1,11 @@
+<?php
+$confirmado = [];
+$confirmado[0] = false;
+$confirmado[1] = false;
+$confirmado[2] = true;
+$confirmado[3] = true;
+$confirmado[4] = true;
+$confirmado[5] = true;
+
+echo "El elemento con índice 0 es: " . ($confirmado[0] ? 'true' : 'false');
+?>

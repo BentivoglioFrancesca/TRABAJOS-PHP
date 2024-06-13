@@ -27,13 +27,6 @@
     <h2>Programa para el tp 8°</h2>
     <form method="post">
         <?php
-        // Verificamos si se han enviado los datos del formulario
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            // Inicializamos variables
-            $sum = 0;
-            $max = PHP_INT_MIN; // Valor mínimo posible en PHP
-            $min = PHP_INT_MAX; // Valor máximo posible en PHP
-            $count = 0;
 
             for ($i = 1; $i <= 10; $i++) {
                 
@@ -62,7 +55,7 @@
 
         <h3>Ingrese 10 valores:</h3>
         <?php
-        // Generamos los campos de entrada para los valores
+    
         for ($i = 1; $i <= 10; $i++) {
             echo "<label for=\"valor$i\">Valor $i:</label>";
             echo "<input type=\"number\" id=\"valor$i\" name=\"valor$i\"><br>";

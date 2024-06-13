@@ -1,0 +1,9 @@
+<?php
+$importe = [];
+$importe[0] = 75.24;
+$importe[1] = 90.45;
+$importe[2] = 78.83;
+$importe[3] = 16.09;
+
+echo "El elemento con índice 1 es: " . $importe[1];
+?>

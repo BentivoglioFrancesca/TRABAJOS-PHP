@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de estudio</title>
+</head>
+<body>
+    <form method="post" action="queso.php">
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+        Seleccione su nivel de estudio:
+        <br>
+        <input type="radio" name="nivel de estudio" value="Primarios"> Primarios
+        <br>
+        <input type="radio" name="nivel de estudio" value="Secundarios"> Secundarios
+        <br>
+        <input type="radio" name="nivel de estudio" value="Terciario"> Terciario
+        <br>
+        <input type="radio" name="nivel de estudio" value="Universitario"> Universitario
+        <br>
+        <input type="radio" name="nivel de estudio" value="Sin estudios"> Sin estudios
+        <br>
+        <input type="submit" value="Aceptar">
+    </form>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado de formulario</title>
+</head>
+<body>
+<?php
+$nombre = $_REQUEST['nombre'];
+$nivel_estudio = $_REQUEST['nivel_estudio'];
+
+echo "Nombre: " . ($nombre) . "<br>";
+echo "Nivel de estudio: " . ($nivel_estudio);
+?>
+</body>
+</html>

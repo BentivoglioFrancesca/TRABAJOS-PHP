@@ -1,0 +1,11 @@
+<?php
+$jugador = ["Romero", "Messi", "Bentivoglio", "Tomaino", "Fernandez"];
+
+if (!empty($jugador)) {
+    $alineacion = "En la alineación del equipo estan " . implode(", ", $jugador) . ",";
+} else {
+    $alineacion = "No hay jugadores en la alineación.";
+}
+
+echo $alineacion;
+?>

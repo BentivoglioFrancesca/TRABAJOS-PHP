@@ -1,0 +1,13 @@
+<?php
+$usuarios = [
+    "usuario1" => "1234678",
+    "usuario2" => "890890",
+    "usuario3" => "milanesaconpure",
+    "usuario4" => "098765",
+    "usuario5" => "4321"
+];
+
+foreach ($usuarios as $nombre => $clave) {
+    echo "Nombre de usuario: $nombre - Clave de acceso: $clave<br>";
+}
+?>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>formulario personal</title>
+</head>
+<body>
+    <form method="post" action="formulario.php">
+        Ingresa tu nombre:
+        <input type="texto" name="nombre">
+        <br>
+        Ingresa tu edad:
+        <input type="texto" name="edad">
+        <br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDAD</title>
+</head>
+<body>
+<?php
+$nombre = $_REQUEST['nombre'];
+$edad = $_REQUEST['edad'];
+
+if ($edad < 18) {
+    echo "$nombre, sos menor de edad.";
+} else {
+    echo "$nombre, sos mayor de edad.";
+}
+?>
+</body>
+</html>

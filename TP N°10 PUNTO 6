@@ -1,0 +1,12 @@
+<?php
+$meses = [
+    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+];
+
+sort($meses);
+echo "Ordenados alfabéticamente:\n";
+foreach ($meses as $mes) {
+    echo $mes . "\n";
+}
+?>

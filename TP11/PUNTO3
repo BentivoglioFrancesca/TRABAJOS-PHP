@@ -1,0 +1,1 @@
+pagina1.php: Define una función cuadradocubo que toma un valor y calcula su cuadrado y cubo. Los resultados se almacenan en variables pasadas por referencia. Luego, se llama a la función con el valor 2 y se muestran los resultados.

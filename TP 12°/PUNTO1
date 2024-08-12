@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+</head>
+<body>
+    <form action="factorial.php" method="post">
+        <label for="number">Ingrese un número entero:</label>
+        <input type="number" id="number" name="number" required>
+        <input type="submit" value="Calcular Factorial">
+    </form>
+</body>
+</html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $number = intval($_POST['number']);
+    
+    function factorial($n) {
+        if ($n == 0) {
+            return 1;
+        } else {
+            return $n * factorial($n - 1);
+        }
+    }
+
+    $result = factorial($number);
+    echo "El factorial de $number es: $result";
+}
+?>

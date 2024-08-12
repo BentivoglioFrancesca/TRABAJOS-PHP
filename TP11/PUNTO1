@@ -1,0 +1,3 @@
+pagina1.php: Es un formulario HTML que permite al usuario ingresar su nombre y comentarios. Cuando se envía el formulario, los datos se envían a pagina2.php utilizando el método POST.
+
+pagina2.php: Este archivo PHP recibe los datos del formulario, abre el archivo datos.txt en modo de anexado (a), y escribe los datos del usuario en el archivo. Luego, muestra un mensaje indicando que los datos se cargaron correctamente.

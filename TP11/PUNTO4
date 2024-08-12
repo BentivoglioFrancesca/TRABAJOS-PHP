@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Pedido de Pizzas</title>
+</head>
+<body>
+<form action="pagina2.php" method="post">
+Nombre:
+<input type="text" name="nombre">
+<br>
+Pizza:
+<input type="text" name="pizza">
+<br>
+Cantidad:
+<input type="number" name="cantidad">
+<br>
+<input type="submit" value="Enviar Pedido">
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<title>Confirmación de Pedido</title>
+</head>
+<body>
+<?php
+$ar = fopen("pedidos.txt", "a") or die("Problemas en la creacion");
+fputs($ar, "Nombre: " . $_REQUEST['nombre']);
+fputs($ar, "\nPizza: " . $_REQUEST['pizza']);
+fputs($ar, "\nCantidad: " . $_REQUEST['cantidad']);
+fputs($ar, "\n--------------------------------------------------------");
+fputs($ar, "\n");
+fclose($ar);
+echo "Pedido registrado correctamente.";
+?>
+</body>
+</html>

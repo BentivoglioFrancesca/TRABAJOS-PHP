@@ -1,0 +1,1 @@
+pagina1.php: Este archivo PHP abre datos.txt en modo de lectura (r) y lee el contenido línea por línea. fgets() lee una línea del archivo, y nl2br() convierte los saltos de línea en etiquetas <br> HTML para la visualización en el navegador. Finalmente, se muestra el contenido del archivo.

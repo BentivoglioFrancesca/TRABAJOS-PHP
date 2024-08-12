@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Código de Área</title>
+</head>
+<body>
+    <form action="codigo.php" method="post">
+        <label for="code">Ingrese el código de área:</label>
+        <input type="number" id="code" name="code" required>
+        <input type="submit" value="Consultar">
+    </form>
+</body>
+</html>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $code = intval($_POST['code']);
+    
+    $areas = array(
+        11 => 'Ciudad Autónoma de Buenos Aires (CABA)',
+        351 => 'Córdoba (Provincia de Córdoba)',
+        3543 => 'Córdoba (Provincia de Córdoba)',
+        379 => 'Corrientes (Provincia de Corrientes)',
+        370 => 'Formosa (Provincia de Formosa)',
+        221 => 'La Plata (Provincia de Buenos Aires)',
+        380 => 'La Rioja (Provincia de La Rioja)',
+        261 => 'Mendoza (Provincia de Mendoza)',
+        299 => 'Neuquén (Provincia del Neuquén)',
+        343 => 'Paraná (Provincia de Entre Ríos)',
+        376 => 'Posadas (Provincia de Misiones)',
+        2804 => 'Rawson (Provincia del Chubut)',
+        362 => 'Resistencia (Provincia del Chaco)',
+        2966 => 'Río Gallegos (Provincia de Santa Cruz)',
+        387 => 'Salta (Provincia de Salta)',
+        383 => 'San Fernando del Valle de Catamarca (Provincia de Catamarca)',
+        264 => 'San Juan (Provincia de San Juan)',
+        266 => 'San Luis (Provincia de San Luis)',
+        381 => 'San Miguel de Tucumán (Provincia de Tucumán)',
+        388 => 'San Salvador de Jujuy (Provincia de Jujuy)',
+        342 => 'Santa Fe (Provincia de Santa Fe)',
+        2954 => 'Santa Rosa (Provincia de La Pampa)',
+        385 => 'Santiago del Estero (Provincia de Santiago del Estero)',
+        2920 => 'Viedma (Provincia de Río Negro)',
+        2901 => 'Ushuaia (Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur)'
+    );
+
+    if (array_key_exists($code, $areas)) {
+        echo $areas[$code];
+    } else {
+        echo "CÓDIGO DE ÁREA NO ENCONTRADO";
+    }
+}
+?>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Suma de Números</title>
+</head>
+<body>
+<form action="pagina2.php" method="post">
+Número 1:
+<input type="number" name="num1">
+<br>
+Número 2:
+<input type="number" name="num2">
+<br>
+<input type="submit" value="Sumar">
+</form>
+</body>
+</html>
+<html>
+<head>
+<title>Resultado</title>
+</head>
+<body>
+<?php
+function sumar($num1, $num2) {
+    return $num1 + $num2;
+}
+$suma = sumar($_POST['num1'], $_POST['num2']);
+echo "La suma es: " . $suma;
+?>
+</body>
+</html>

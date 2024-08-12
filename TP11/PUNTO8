@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Verificar Par o Impar</title>
+</head>
+<body>
+<form action="pagina2.php" method="post">
+Número:
+<input type="number" name="numero">
+<br>
+<input type="submit" value="Verificar">
+</form>
+</body>
+</html>
+<html>
+<head>
+<title>Resultado</title>
+</head>
+<body>
+<?php
+function esPar($numero) {
+    return $numero % 2 == 0;
+}
+if (esPar($_POST['numero'])) {
+    echo "El número es par.";
+} else {
+    echo "El número es impar.";
+}
+?>
+</body>
+</html>

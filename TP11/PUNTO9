@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Inscripción</title>
+</head>
+<body>
+<form action="pagina2.php" method="post">
+Apellidos y Nombres:
+<input type="text" name="nombre">
+<br>
+DNI:
+<input type="text" name="dni">
+<br>
+Fecha de Nacimiento:
+<input type="date" name="fecha_nacimiento">
+<br>
+Curso Actual:
+<input type="text" name="curso">
+<br>
+Materias Adeudadas:
+<input type="number" name="materias">
+<br>
+Materia:
+<input type="text" name="materia">
+<br>
+Fecha de Inscripción:
+<input type="date" name="fecha_inscripcion">
+<br>
+<input type="submit" value="Inscribir">
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<title>Confirmación de Inscripción</title>
+</head>
+<body>
+<?php
+$ar = fopen("comprobante.txt", "a") or die("Problemas en la creación del archivo");
+fputs($ar, "Apellidos y Nombres: " . $_POST['nombre']);
+fputs($ar, "\nDNI: " . $_POST['dni']);
+fputs($ar, "\nFecha de Nacimiento: " . $_POST['fecha_nacimiento']);
+fputs($ar, "\nCurso Actual: " . $_POST['curso']);
+fputs($ar, "\nMaterias Adeudadas: " . $_POST['materias']);
+fputs($ar, "\nMateria: " . $_POST['materia']);
+fputs($ar, "\nFecha de Inscripción: " . $_POST['fecha_inscripcion']);
+fputs($ar, "\n--------------------------------------------------------");
+fputs($ar, "\n");
+fclose($ar);
+echo "Inscripción registrada correctamente.";
+?>
+</body>
+</html>

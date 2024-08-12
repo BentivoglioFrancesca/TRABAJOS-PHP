@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Verificar Claves</title>
+</head>
+<body>
+<form action="pagina2.php" method="post">
+Clave 1:
+<input type="password" name="clave1">
+<br>
+Clave 2:
+<input type="password" name="clave2">
+<br>
+<input type="submit" value="Verificar">
+</form>
+</body>
+</html>
+
+<html>
+<head>
+<title>Resultado</title>
+</head>
+<body>
+<?php
+function verificarClaves($clave1, $clave2) {
+    if ($clave1 !== $clave2) {
+        echo "Las claves no coinciden.";
+    } else {
+        echo "Las claves coinciden.";
+    }
+}
+verificarClaves($_POST['clave1'], $_POST['clave2']);
+?>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semanas de Clases</title>
+</head>
+<body>
+    <form action="respuesta.php" method="post">
+        <label for="fecha">Ingrese la fecha (YYYY-MM-DD):</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <input type="submit" value="Calcular Semanas">
+    </form>
+</body>
+</html>
+<?php
+include 'semanas.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fecha = $_POST['fecha'];
+    echo "Cantidad de semanas desde el inicio de clases: " . semanasClases($fecha);
+}
+
+function semanasClases($fecha) {
+    $inicioClases = new DateTime('2024-03-01'); // Cambia la fecha según el inicio de clases
+    $fechaActual = new DateTime($fecha);
+    $intervalo = $inicioClases->diff($fechaActual);
+    return floor($intervalo->days / 7);
+}
+?>
+

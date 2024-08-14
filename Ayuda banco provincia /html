@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Provincia de Buenos Aires</title>
+    <link rel="stylesheet" href="descarga.jfif">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Banco Provincia Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Personas</a></li>
+                <li><a href="#">Empresas</a></li>
+                <li><a href="#">Provincia <br> Microcréditos</a></li>
+                <li><a href="#">Provincia <br> Compras</a></li>
+                <li><a href="#">Turnos <br> web</a></li>
+            </ul>
+        </nav>
+        <div class="buttons1">
+            <button>BIP Personas</button>
+            <button>BIP Empresas</button>
+            <button>☰</button>
+        </div>
+
+    </header>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <a href="#"><img src="imagen1 de verdad.webp" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="imagen1.webp" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="imagen.webp" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="em.webp" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="que.webp" alt=""></a>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button id="prev"></button>
+                <button id="next"></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="cotizacion-container">
+            <div class="cotizacion-content">
+                <h3>Cotización del dólar:</h3>
+                <h3>Compra: $918,00</h3>
+                <h3>Venta: $958,00</h3>
+                <h3>Últ. actualización: 15:00</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="iconos">
+        <div class="ref">
+            <a href="#"><img src="signo.png" alt=""></a>
+            <a href="#"><img src="oaaa.png" alt=""></a>
+            <a href="#"><img src="telefono.png" alt=""></a>
+            <a href="#"><img src="conch.png" alt=""></a>
+            <a href="#"><img src="flcha.png" alt=""></a>
+        </div>
+    </div>
+
+    <br>
+    <br><br><br>    <br><br><br>
+    <div class="card-container">
+        <div class="card">
+            <img src="mina.webp" alt="Image 1">
+            <div class="card-content">
+                <h2>Hacete Cuenta DNI y disfrutá de todos los beneficios</h2>
+                <p>Descargá la app en tu celu: es gratis y 100% digital.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="viejo.webp" alt="Image 2">
+            <div class="card-content">
+                <h2>¿Cómo evitar las estafas?</h2>
+                <p>Aprendé a reconocer las maniobras de las personas estafadoras y cómo prevenirte en todo momento.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="chica.webp" alt="Image 3">
+            <div class="card-content">
+                <h2>Paquete de productos para Profesionales y Negocios</h2>
+                <p>Reducí costos y potenciá tu negocio o emprendimiento.</p>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><br>
+    
+    <div class="container">
+        <a class="link-card-small" href=""><div class="card-large">
+            <img src="ahre.webp" alt="Beneficio">
+            <div class="text-container">
+                <h3>Ahorrá todos los días con beneficios pensados para vos.</h3>
+                <p>Comprá todo lo que necesites con tus tarjetas del Banco Provincia</p>
+            </div>
+        </div></a>
+        <div class="right-cards-container">
+            <a class="link-card-small" href="#"><div class="card-small">
+                <img src="lentes.webp" alt="Provincia Compras">
+                <div class="text-container">
+                    <h3>Provincia Compras, conocé nuestra tienda virtual</h3>
+                    <p>Comprá productos de electro, deportes, calzado, juguetería, moda y mucho más.</p>
+                </div>
+            </div></a>
+            <a class="link-card-small" href="#"><div class="card-small">
+                <img src="pende.webp" alt="Mesumo">
+                <div class="text-container">
+                    <h3>Regalale sonrisas a tu peque</h3>
+                    <p>Del 5 al 12 de agosto, 40% de ahorro en los rubros "Entretenimiento" y "Librería y Juguetería"</p>
+                </div>
+            </div></a>
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <div class="card-container">
+        <div class="card1">
+            <img src="productos_2_agropecuaria.webp" alt="Image 1">
+            <div class="card-content1">
+                <p>Procampo: la tarjeta de compra para el productor agropecuario y el contratista rural.</p>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="productos_2_repyme.webp" alt="Image 2">
+            <div class="card-content1">
+                <p>Un impulso para el desarrollo de tus negocios.</p>
+            </div>
+        </div>
+        <div class="card1">
+            <img src="productos_2_inversiones.webp" alt="Image 3">
+            <div class="card-content1">
+                <p>Encontrá las mejores alternativas de inversión.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <div class="icon-container">
+        <div class="icon-button">
+            <img src="este2-removebg-preview.png" alt="Encontranos">
+            <p>Encontranos</p>
+        </div>
+        <div class="icon-button">
+            <img src="este-removebg-preview.png" alt="Contactanos">
+            <p>Contactanos</p>
+        </div>
+        <div class="icon-button">
+            <img src="el_coso_esto-removebg-preview.png" alt="Te ayudamos">
+            <p>Te ayudamos</p>
+        </div>
+    </div>
+    
+    <div id="top"></div> <!-- Ancla al que el botón llevará -->
+
+    <!-- Botón para ir al principio -->
+    <a href="#top" id="scroll-to-top" class="scroll-to-top">
+      <img src="flecha para arriba.png" alt="Volver al principio">
+    </a>
+  
+    
+</body>
+<script src="javas.js"></script>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Institucional</h3>
+            <ul>
+                <li><a href="#">Autoridades</a></li>
+                <li><a href="#">Carta Orgánica</a></li>
+                <li><a href="#">Organigrama</a></li>
+                <li><a href="#">Estados financieros</a></li>
+                <li><a href="#">Disciplina de Mercado</a></li>
+                <li><a href="#">Gobierno Institucional</a></li>
+                <li><a href="#">Sostenibilidad</a></li>
+                <li><a href="#">Prensa y Noticias</a></li>
+                <li><a href="#">Trabajar en Banco Provincia</a></li>
+                <li><a href="#">Mujeres y Diversidades</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Información legal</h3>
+            <ul>
+                <li><a href="#">Atención al Usuario de Servicios Financieros</a></li>
+                <li><a href="#">Información al Usuario de Servicios Financieros</a></li>
+                <li><a href="#">Régimen de transparencia del BCRA</a></li>
+                <li><a href="#">Portal del Cliente Bancario</a></li>
+                <li><a href="#">AlyC</a></li>
+                <li><a href="#">Debida Diligencia</a></li>
+                <li><a href="#">PEPs y Sujetos Obligados</a></li>
+                <li><a href="#">Defensa al Consumidor</a></li>
+                <li><a href="#">Protección de Datos Personales</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Ayuda y guías</h3>
+            <ul>
+                <li><a href="#">App Cuenta DNI</a></li>
+                <li><a href="#">Simuladores Plazos Fijos</a></li>
+                <li><a href="#">Simuladores Préstamos Personales</a></li>
+                <li><a href="#">Asesoramiento sobre deudas con atraso</a></li>
+                <li><a href="#">ATM personas con discapacidad visual</a></li>
+                <li><a href="#">Centro de Seguridad</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Otros sitios de interés</h3>
+            <ul>
+                <li><a href="#">Compras y licitaciones</a></li>
+                <li><a href="#">Oportunidades inmobiliarias</a></li>
+                <li><a href="#">Registro de Profesionales Externos</a></li>
+                <li><a href="#">Provincia Servicios Financieros</a></li>
+                <li><a href="#">Grupo Provincia</a></li>
+                <li><a href="#">Museo Banco Provincia</a></li>
+                <li><a href="#">Cátedra Arturo Jauretche</a></li>
+                <li><a href="#">Provincia Microcréditos</a></li>
+                <li><a href="#">Fundación Banco Provincia</a></li>
+                <li><a href="#">Buenos Aires Provincia</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-links">
+            <a href="#"><img src="arrepentimiento" alt="Botón de arrepentimiento"></a>
+            <div class="footer-links1">
+            <a href="#"><img src="contrato.svg" alt="Contratos de adhesión"></a>
+        </div>
+        <div class="footer-links2">
+        <a href="#"><img src="usuarios.svg" alt="Contratos de adhesión"></a>    
+        </div>
+    </div>
+    <div class="que-bronca">
+        <span>Síguenos en :</span></div>
+
+    <div class="footer-social">
+         
+            <br>
+            <a href="#"><img src="facebu.png" alt="Facebook"></a>
+            <a href="#"><img src="x.png" alt="Twitter"></a>
+            <a href="#"><img src="ig.png" alt="Instagram"></a>
+            <a href="#"><img src="yt.png" alt="YouTube"></a>
+            <a href="#"><img src="in.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-legal">
+            <p>Términos y condiciones de navegabilidad de sitio web</p>
+            <p>&copy; 2024 - Banco de la Provincia de Buenos Aires - Casa Matriz: Calle 7 N° 726 (B1900TFS) La Plata, Buenos Aires, Argentina</p>
+        </div>
+    </div>
+</footer>
+
+
+</html>
+
+
